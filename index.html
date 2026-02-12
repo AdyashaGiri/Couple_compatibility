@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AmourAlign ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fff5f5;
+        overflow-x: hidden;
+      }
+      .font-romantic {
+        font-family: 'Dancing Script', cursive;
+      }
+      /* Floating Hearts Animation */
+      .bg-heart {
+        position: fixed;
+        top: -10%;
+        color: rgba(244, 63, 94, 0.1);
+        z-index: -1;
+        user-select: none;
+        pointer-events: none;
+        animation: float 15s linear infinite;
+      }
+      @keyframes float {
+        0% { transform: translateY(110vh) rotate(0deg); opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- Floating Background Elements -->
+    <div class="bg-heart" style="left: 5%; font-size: 24px; animation-delay: 0s;">❤️</div>
+    <div class="bg-heart" style="left: 15%; font-size: 32px; animation-delay: 5s;">💖</div>
+    <div class="bg-heart" style="left: 25%; font-size: 18px; animation-delay: 2s;">💕</div>
+    <div class="bg-heart" style="left: 45%; font-size: 28px; animation-delay: 8s;">💘</div>
+    <div class="bg-heart" style="left: 65%; font-size: 20px; animation-delay: 1s;">💓</div>
+    <div class="bg-heart" style="left: 85%; font-size: 35px; animation-delay: 4s;">✨</div>
+    <div class="bg-heart" style="left: 95%; font-size: 24px; animation-delay: 7s;">❤️</div>
+  </body>
+</html>
